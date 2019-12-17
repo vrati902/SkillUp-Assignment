@@ -1,0 +1,12 @@
+Dear Approver,
+
+Your approval is requested for the following course, here are the details :
+Course            - {!Course__c.Name}
+Trainer            - Nitin Goyal
+Duration          - 30 Days
+Per seat price  - {!Course__c.Per_Seat_Price__c}
+
+I urge you to consider and approve this in earnest so that the trainee can proceed with his/her learning.
+
+Best Regards,
+Team SkillUp

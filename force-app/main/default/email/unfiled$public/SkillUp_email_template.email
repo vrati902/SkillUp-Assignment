@@ -1,0 +1,18 @@
+<messaging:emailTemplate subject="Hola, Download your training certificate from here !" recipientType="Contact" relatedToType="Trainee__c">
+<messaging:plainTextEmailBody >
+Dear {!recipient.Name},
+ 
+Congratulations on earning your Salesforce Certification credential! 
+
+To provide you with immediate access to your Certificate, we have attached the document below. You can now download the eCertificate in pdf form. 
+We encourage you to continue your Salesforce education and to keep your Salesforce Certification up-to-date with the latest Salesforce Product release. 
+You can find more information on Salesforce training and certification offerings on our SkillUp application. 
+If you require further assistance, do not respond to this email correspondence. 
+Please contact SkillUp Certification Support. 
+
+https://makepositive109-dev-ed--c.visualforce.com/apex/Certificate?id={!relatedTo.Id}
+
+Best Regards, 
+The SkillUp Certification Team
+</messaging:plainTextEmailBody>
+</messaging:emailTemplate>

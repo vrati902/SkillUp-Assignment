@@ -1,0 +1,35 @@
+<apex:component controller="certificateComponentController">   
+   <apex:form >
+      <div style="border: 3px solid #000000; height:684px;">
+            <div style="width:100%;">
+                <br></br>
+                <div style="width:50%;">                    
+                    <apex:image url="{!$Resource.LogoS}" width="150" height="100"/>
+                </div>
+                <div>
+                    <center>
+                        <br></br>
+                        <h1>SkillUp Training And Certification</h1>
+                        <h2> Certificate of completion</h2>
+                   </center>
+                </div>  
+           </div> <br></br>
+            
+        <center>
+                <p>This is to certify that Mr/Ms <apex:outputLabel value="{!trainee.Name}" style="font-weight: bold;"></apex:outputLabel> has successfully completed <apex:outputLabel value="{!course.Name}" style="font-weight: bold;"></apex:outputLabel>.</p>
+            <p>During the period of one month from
+                    <apex:outputText value="{0,date,MM/dd/yyyy}" style="font-size: 1.0em; font-weight: bold;">
+					<apex:param value="{!trainee.Enrollment_Date__c}" />
+					</apex:outputText>.</p>
+        </center>
+                       <br></br>  
+            <div align="left">
+                <apex:outputLabel value="{!trainer.Name}" style="font-size: 1.0em;">
+                </apex:outputLabel>
+                
+                <p><label style="font-weight: bold;">Authorised Signatory </label></p>
+            </div>
+            
+        </div>
+  </apex:form>
+</apex:component>

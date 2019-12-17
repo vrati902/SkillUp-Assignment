@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ValidationRule xmlns="http://soap.sforce.com/2006/04/metadata">
+    <fullName>Check_while_creating_trainee_record</fullName>
+    <active>true</active>
+    <errorConditionFormula>AND(  NOT( $Setup.Process_Deactivation__c.Deactivate_validation_rules__c ),
+NOT( ISPICKVAL(  Course__r.Is_approved__c, &#39;Approved&#39; ) )
+ ||  ISBLANK( Contact__r.Email ) )</errorConditionFormula>
+    <errorMessage>Record cannot be created without email entry or approved course entry.</errorMessage>
+</ValidationRule>

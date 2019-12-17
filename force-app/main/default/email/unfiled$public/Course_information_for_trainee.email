@@ -1,0 +1,22 @@
+Dear {!Trainee__c.Name} ,
+
+All of us at SkillUp are glad to inform you that you have been enrolled in {!Trainee__c.Course__c} course. 
+Here are the details of the course :
+
+Duration               - 30 Days
+Exam Date           - {!Trainee__c.Test_Date__c}
+Certification Cost - {!Trainee__c.Course_Certification_Cost__c}
+Trainer                 - Nitin Goyal
+
+Should you have any questions, please feel free to email me at {!User.Email}. 
+
+You can also contact SkillUp on the following numbers: 
+
+Main: 810-545-1000
+Sales: 810-545-1222
+Customer Service & Support: 810-545-1333
+
+I am confident that SkillUp will teach you well and hope to see your learning grow over the years.
+
+Best Regards, 
+SkillUp Team

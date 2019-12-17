@@ -1,0 +1,13 @@
+<aura:component controller="TraineeInsertViaLWC" implements="force:appHostable,flexipage:availableForAllPageTypes,flexipage:availableForRecordHome,force:hasRecordId,forceCommunity:availableForAllPageTypes,force:lightningQuickAction,force:hasRecordId"
+    access="global">
+    <aura:attribute name="selectedLookUpRecord" type="sObject" default="{}" />
+    <aura:attribute name="objTrainee" type="Trainee__c" default="{'sobjectType':'Trainee__c'}" />
+    <aura:attribute name="currentrecordId" type="String" />
+    <aura:attribute name="sObjectName" type="String" />
+
+    <div class="slds-m-around_large">
+        <c:CustomLookup objectAPIName="Course__c" IconName="standard:account" label="Open Courses" selectedRecord="{!v.currentrecordId}" />
+        <br/>
+        <c:saveButton selectedRecordId="{!v.currentrecordId}" recordId="{!v.recordId}"/>
+    </div>
+</aura:component>

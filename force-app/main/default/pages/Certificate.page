@@ -1,0 +1,3 @@
+<apex:page standardController="Trainee__c" renderAs="pdf" contentType="application/Certificate.pdf">
+<c:CertificateComponent rendered="{!if(Trainee__c.Course_Status__c=='Completed',true,false)}"/>
+</apex:page>
